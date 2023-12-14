@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La ferme de Flo'</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---------------- header ------------>
+    <header class="container" id="bandeau">
+        <a href="index.html">
+            <img id="logo" src="images-ferme-flo/logov1.png" alt="www.lafermedeflo.fr">
+        </a>
+        <nav id="menuprincipal">
+            <div id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="index.html" id="linkAccueil">Accueil</a></li>
+                <li><a href="https://www.lafermedeflo.fr/particuliers/">Visiter la ferme</a></li>
+                <li><a href="https://www.lafermedeflo.fr/gite-5-personnes/">Les hébergments de Flo'</a></li>
+                <li><a href="https://www.lafermedeflo.fr/escape-game/">Espace Game</a></li>
+                <li><a href="actualites.html" id="linkActualites" class="choix">Actualités</a></li>
+                <li><a href="contact.html" id="linkContact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--------------- main contenu -------------->
+    <main id="contenuActu" class="container">
+        <article id="actualites">
+            <h1>Nos actualités du moments.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt quod, dolorum est voluptatum consectetur accusantium illum quos. Sequi deleniti tenetur debitis
+                porro velit distinctio non,
+                odit maiores ullam fugit eum!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis delectus ad possimus inventore sint impedit,
+                quas voluptatem vitae! Animi totam dignissimos corporis cupiditate delectus ab similique quas unde!
+                Eius, nesciunt.
+            </p>
+            <div id="gourmandises">
+                <h2>Goutez aux gourmandises de la ferme de Flo'.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Ipsa deleniti repellat odit ducimus quasi quaerat aliquam, 
+                    laboriosam dolorum molestias aperiam esse cupiditate facilis obcaecati unde praesentium quod nihil repudiandae fugiat! 
+                </p>
+                <img src="images-ferme-flo/produits.jpg" alt="produits"> 
+            </div>
+        </article>
+        <aside id="noel">
+            <img src="images-ferme-flo/noel.jpg" alt="noel">
+        </aside>
+        
+    </main>
+    <!----------------- footer ------------->
+    <footer id="pied" class="container">
+        <aside id="bas" >
+            <div class="colonne">
+                <h3>La ferme de Flo'</h3>
+                <a href="index.html"><img src="images-ferme-flo/logov1.png"></a>
+            </div>
+            <div class="colonne">
+                <h3>Adresse</h3>
+                <address>
+                    7 rue des Ramoneds<br>
+                    89140 EVRY<br>
+                    0680599480<br>
+                    contact@lafermedeflo.fr
+                </address>
+            </div>
+            <div class="colonne">
+                <h3>Restons en contact</h3>
+                <ul>
+                    <li><a href="https://fr-fr.facebook.com/lafermedeflo89/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/488668764654303/la-ferme-de-flo/"><i class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="colonne">
+                <h3>Newsletter</h3>
+                <form action="newsletter.php" method="post">
+                    <p><input type="email" name="email-newsletter" placeholder="Tapez votre email"></p>
+                    <p><input type="submit" value="S ' INSCRIRE"></p>
+                </form>
+            </div>
+           
+            <aside id="fleche">
+                <a href="#bandeau"><img src="images-ferme-flo/flechehaut.png"></a>
+            </aside>
+        </aside>
+        <div id="copyright" class="container">
+            <p>Copyright &copy; 2023 - Amina ALI - Kercode - Greta Bretagne Sud <a href="mention.html">| Mentions légales</a></p>
+        </div>
+    </footer>
+
+    <!---------- Section JavaScript et jSQuery -------->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script>var page = "accueil";</script>
+    <!-- script pour afficher une barre en dessous de l'onglet de la page ou on se situe  -->
+    <script src="scripts/choix.js"></script>
+    <script>
+        $("#menuprincipal #burger i").click(function () {
+            $("#menuprincipal ul").addClass("on").slideToggle(1500);
+        });
+    </script>
+</body>
+
+</html>

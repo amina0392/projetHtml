@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La ferme de Flo'</title>
+    <!-- css nivo slider -->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <!-- fin css nivo slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---------------- header ------------>
+    <header class="container" id="bandeau">
+        <a href="index.html">
+            <img id="logo" src="images-ferme-flo/logov1.png" alt="www.lafermedeflo.fr">
+        </a>
+        <nav id="menuprincipal">
+            <!-- menu burger visible uniquement si écran < 768px -->
+            <div id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="index.html" id="linkAccueil" class="choix">Accueil</a></li>
+                <li><a href="https://www.lafermedeflo.fr/particuliers/">Visiter la ferme</a></li>
+                <li><a href="https://www.lafermedeflo.fr/gite-5-personnes/">Les hébergments de Flo'</a></li>
+                <li><a href="https://www.lafermedeflo.fr/escape-game/">Espace Game</a></li>
+                <li><a href="actualites.html" id="linkActualites">Actualités</a></li>
+                <li><a href="contact.html" id="linkContact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!------------- slider visible uniquement si ecran > 768px  ------------------>
+
+    <div class="slider-wrapper theme-default container">
+        <aside id="bienvenue" class="container">
+            <h1>Bienvenue à la ferme de Flo'.</h1>
+            <p>
+                Au cours de votre visite vous pourrez découvrir les animaux (plus de 200 de 30 espèces !) vivant en
+                harmonie.<br>
+                Vous n’allez pas vous ennuyer ! Nous avons fait en sorte que votre visite vous donne envie de partager
+                notre
+                quotidien.<br>
+                Notre devise : « le bien être le bien vivre et le bien manger dans le respect de tous et de chacun».<br>
+                Ils sont nombreux et vous attendent avec impatience.<br>
+                Il y en a peut-être que vous n'avez jamais approché de si près de votre vie.<br>
+                Nos amies les bêtes sont belles, simples et aimantes. Elles vous adorent.<br> 
+                Et c'est très souvent réciproque une fois que vous avez fait leur connaissance. Amis pour la vie? C'est certain !
+            </p>
+        </aside>
+        <!------------------- image slider------------------------ -->
+        <div id="slider" class="nivoSlider" class="container">
+            <img src="images-ferme-flo/acc1.jpg" alt="canard" data-transition="fade" />
+            <img src="images-ferme-flo/acc2.jpg" alt="entrée" data-transition="fade" />
+            <img src="images-ferme-flo/acc3.jpg" alt="annimation" data-transition="fade" />
+        </div>
+    </div>
+    <!-- section accueil visible uniquement si ecran < 768 px -->
+    <section id="accueil" class="container">
+        <article class="monArticle">
+            <h1>Bienvenue dans la ferme de Flo'.</h1>
+            <p>Au cours de votre visite vous pourrez découvrir les animaux (plus de 200 de 30 espèces !) vivant en
+                harmonie.<br>
+                Vous n’allez pas vous ennuyer ! Nous avons fait en sorte que votre visite vous donne envie de partager
+                notre quotidien.<br>
+            </p>
+            <img src="images-ferme-flo/acc1.jpg" alt="mobile">
+        </article>
+    </section>
+ 
+    <!------------------------- main contenu ------------------------------------>
+    <main id="contenuAccueil" class="container">
+        <div id="blocA">
+            <h2>Présentation vidéo de la ferme avec Flo'.</h2>
+            <iframe src="https://www.youtube.com/embed/95kz9QfRPDM?si=JpEWnNLoILIgEGRf" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div id="blocB">
+            <p>Rendez-vous sur notre page<a href="https://www.facebook.com/lafermedeflo89/videos"><strong>&nbsp;Facebook</strong></a>, pour
+                visualiser d'autre vidéo.</p>
+            <img src="images-ferme-flo/image-video.png" alt="facebook">
+        </div>
+    </main>
+    <!------------------------------- footer -------------------------------------->
+    <footer id="pied" class="container">
+        <aside id="bas" >
+            <div class="colonne">
+                <h3>La ferme de Flo'</h3>
+                <a href="index.html"><img src="images-ferme-flo/logov1.png"></a>
+            </div>
+            <div class="colonne">
+                <h3>Adresse</h3>
+                <address>
+                    7 rue des Ramoneds<br>
+                    89140 EVRY<br>
+                    0680599480<br>
+                    contact@lafermedeflo.fr
+                </address>
+            </div>
+            <div class="colonne">
+                <h3>Restons en contact</h3>
+                <ul>
+                    <li><a href="https://fr-fr.facebook.com/lafermedeflo89/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/488668764654303/la-ferme-de-flo/"><i class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="colonne">
+                <h3>Newsletter</h3>
+                <form action="newsletter.php" method="post">
+                    <p><input type="email" name="email-newsletter" placeholder="Tapez votre email"></p>
+                    <p><input type="submit" value="S ' INSCRIRE"></p>
+                </form>
+            </div>
+           
+            <aside id="fleche">
+                <a href="#bandeau"><img src="images-ferme-flo/flechehaut.png"></a>
+            </aside>
+        </aside>
+        <div id="copyright" class="container">
+            <p>Copyright &copy; 2023 - Amina ALI - Kercode - Greta Bretagne Sud <a href="mention.html">| Mentions légales</a></p>
+        </div>
+    </footer>
+
+    <!---------- script nivo slider-------->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script src="scripts/jquery.nivo.slider.js"></script>
+    <script>var page = "accueil";</script>
+     <!-- script pour afficher une barre en dessous de l'onglet de la page ou on se situe  -->
+    <script src="scripts/choix.js"></script>
+    <script>
+        // function pour afficher le slider
+        $(window).load(function () {
+            $("#slider").nivoSlider();
+        });
+        $("#menuprincipal #burger i").click(function () {
+            $("#menuprincipal ul").addClass("on").slideToggle(1500);
+        });
+    </script>
+</body>
+
+</html>

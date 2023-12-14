@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La ferme de Flo'</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---------------- header ------------>
+    <header class="container" id="bandeau">
+        <a href="index.html">
+            <img id="logo" src="images-ferme-flo/logov1.png" alt="www.lafermedeflo.fr">
+        </a>
+        <nav id="menuprincipal">
+            <div id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="index.html" id="linkAccueil">Accueil</a></li>
+                <li><a href="https://www.lafermedeflo.fr/particuliers/">Visiter la ferme</a></li>
+                <li><a href="https://www.lafermedeflo.fr/gite-5-personnes/">Les hébergments de Flo'</a></li>
+                <li><a href="https://www.lafermedeflo.fr/escape-game/">Espace Game</a></li>
+                <li><a href="actualites.html" id="linkActualites">Actualités</a></li>
+                <li><a href="contact.html" id="linkContact" class="choix">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--------------- main contenu -------------->
+    <main id="contenuContact" class="container">
+        <div id="contact">
+            <h1>Contactez-nous</h1>
+            <div id="messageErreur"></div>
+            <form id="formulaire" action="envoyerform.php" method="post">
+                <p>
+                    <select id="civilite" name="identite">
+                        <option class="taille">Civilité*</option>
+                        <option value="Monsieur" class="taille">Monsieur</option>
+                        <option value="Madame" class="taille">Madame</option>
+                        <option value="Autre" class="taille">Autre</option>
+                    </select>
+                </p>
+                <p><input type="text" id="nom" name="nom" placeholder="Nom*"></p>
+                <p><input type="text" id="prenom" name="prenom" placeholder="Prénom*"></p>
+                <p><input type="email" id="email" name="email" placeholder="E-mail*"></p>
+                <p><input type="tel" id="numero" name="telephone" placeholder="Téléphone*"></p>
+                <p><input type="text" name="sujet" placeholder="Sujet"></p>
+                <p><textarea name="message" id="message" placeholder="Votre message..."></textarea></p>
+                <p>
+                    <input type="checkbox" name="rgpd" id="rgpd" value="rgpd"><label for="rgpd">
+                        J'autorise ce site à utiliser mes données personnelles selon
+                        notre <a href="mention.html"><strong>politique de Confidentialité</strong></a></label>
+                </p>
+                <button type="button" id="envoyer" class="bouton" onclick="validerFormulaire()">Envoyer</button>
+            </form>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.0174281737063!2d3.256227875341462!3d48.264039142350086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ef10d0b4286651%3A0x69286e468d16ca9b!2sLa%20Ferme%20de%20Flo!5e0!3m2!1sfr!2sfr!4v1702211216994!5m2!1sfr!2sfr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </main>
+    <!-------------------------------------------- footer ------------------------------------------------------------>
+    <footer id="pied" class="container">
+        <aside id="bas">
+            <div class="colonne">
+                <h3>La ferme de Flo'</h3>
+                <a href="index.html"><img src="images-ferme-flo/logov1.png"></a>
+            </div>
+            <div class="colonne">
+                <h3>Adresse</h3>
+                <address>
+                    7 rue des Ramoneds<br>
+                    89140 EVRY<br>
+                    0680599480<br>
+                    contact@lafermedeflo.fr
+                </address>
+            </div>
+            <div class="colonne">
+                <h3>Restons en contact</h3>
+                <ul>
+                    <li><a href="https://fr-fr.facebook.com/lafermedeflo89/"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/488668764654303/la-ferme-de-flo/"><i
+                                class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="colonne">
+                <h3>Newsletter</h3>
+                <form action="newsletter.php" method="post">
+                    <p><input type="email" name="email-newsletter" placeholder="Tapez votre email"></p>
+                    <p><input type="submit" value="S ' INSCRIRE"></p>
+                </form>
+            </div>
+
+            <aside id="fleche">
+                <a href="#bandeau"><img src="images-ferme-flo/flechehaut.png"></a>
+            </aside>
+        </aside>
+        <div id="copyright" class="container">
+            <p>Copyright &copy; 2023 - Amina ALI - Kercode - Greta Bretagne Sud <a href="mention.html">| Mentions
+                    légales</a></p>
+        </div>
+    </footer>
+
+    <!---------- Section JavaScript et jSQuery -------->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script>
+        var page = "accueil";
+    </script>
+    <!-- script pour afficher une barre en dessous de l'onglet de la page ou on se situe  -->
+    <script src="scripts/choix.js"></script>
+    <!-- script pour la vérification des valeurs saisi dans le formulaire de contact -->
+    <script src="scripts/formulaire.js"></script>
+    <script>
+        $("#menuprincipal #burger i").click(function () {
+            $("#menuprincipal ul").addClass("on").slideToggle(1500);
+        });
+        // fonction pour changer le bouton envoyer de couleur si la cas rgpd n'est pas coché
+        $("#rgpd").click(function (event) {
+            $("#envoyer").css("background", "#9EBD3C").prop("disabled", false);
+        });
+        
+
+        
+    </script>
+
+</body>
+
+</html>
