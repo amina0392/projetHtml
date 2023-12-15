@@ -37,23 +37,23 @@
         </nav>
     </header>
     <!------------- slider visible uniquement si ecran > 768px  ------------------>
-
-    <div class="slider-wrapper theme-default container">
-        <aside id="bienvenue" class="container">
-            <h1>Bienvenue à la ferme de Flo'.</h1>
-            <p>
-                Au cours de votre visite vous pourrez découvrir les animaux (plus de 200 de 30 espèces !) vivant en
-                harmonie.<br>
-                Vous n’allez pas vous ennuyer ! Nous avons fait en sorte que votre visite vous donne envie de partager
-                notre
-                quotidien.<br>
-                Notre devise : « le bien être le bien vivre et le bien manger dans le respect de tous et de chacun».<br>
-                Ils sont nombreux et vous attendent avec impatience.<br>
-                Il y en a peut-être que vous n'avez jamais approché de si près de votre vie.<br>
-                Nos amies les bêtes sont belles, simples et aimantes. Elles vous adorent.<br> 
-                Et c'est très souvent réciproque une fois que vous avez fait leur connaissance. Amis pour la vie? C'est certain !
-            </p>
-        </aside>
+    <section id="pageAccueil" class="container">
+    <div id="bienvenue">
+        <h1>Bienvenue à la ferme de Flo'.</h1>
+        <p>
+            Au cours de votre visite vous pourrez découvrir les animaux (plus de 200 de 30 espèces !) vivant en
+            harmonie.<br>
+            Vous n’allez pas vous ennuyer ! Nous avons fait en sorte que votre visite vous donne envie de partager
+            notre
+            quotidien.<br>
+            Notre devise : « le bien être le bien vivre et le bien manger dans le respect de tous et de chacun».<br>
+            Ils sont nombreux et vous attendent avec impatience.<br>
+            Il y en a peut-être que vous n'avez jamais approché de si près de votre vie.<br>
+            Nos amies les bêtes sont belles, simples et aimantes. Elles vous adorent.<br> 
+            Et c'est très souvent réciproque une fois que vous avez fait leur connaissance. Amis pour la vie? C'est certain !
+        </p>
+    </div>
+    <div class="slider-wrapper theme-default ">
         <!------------------- image slider------------------------ -->
         <div id="slider" class="nivoSlider" class="container">
             <img src="images-ferme-flo/acc1.jpg" alt="canard" data-transition="fade" />
@@ -61,6 +61,7 @@
             <img src="images-ferme-flo/acc3.jpg" alt="annimation" data-transition="fade" />
         </div>
     </div>
+</section>
     <!-- section accueil visible uniquement si ecran < 768 px -->
     <section id="accueil" class="container">
         <article class="monArticle">
@@ -140,8 +141,9 @@
     <script>
         // function pour afficher le slider
         $(window).load(function () {
+           if (($(window).width())>768){
             $("#slider").nivoSlider();
-        });
+        }});
         $("#menuprincipal #burger i").click(function () {
             $("#menuprincipal ul").addClass("on").slideToggle(1500);
         });
