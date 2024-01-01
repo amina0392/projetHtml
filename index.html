@@ -38,30 +38,27 @@
     </header>
     <!------------- slider visible uniquement si ecran > 768px  ------------------>
     <section id="pageAccueil" class="container">
-    <div id="bienvenue">
-        <h1>Bienvenue à la ferme de Flo'.</h1>
-        <p>
-            Au cours de votre visite vous pourrez découvrir les animaux (plus de 200 de 30 espèces !) vivant en
-            harmonie.<br>
-            Vous n’allez pas vous ennuyer ! Nous avons fait en sorte que votre visite vous donne envie de partager
-            notre
-            quotidien.<br>
-            Notre devise : « le bien être le bien vivre et le bien manger dans le respect de tous et de chacun».<br>
-            Ils sont nombreux et vous attendent avec impatience.<br>
-            Il y en a peut-être que vous n'avez jamais approché de si près de votre vie.<br>
-            Nos amies les bêtes sont belles, simples et aimantes. Elles vous adorent.<br> 
-            Et c'est très souvent réciproque une fois que vous avez fait leur connaissance. Amis pour la vie? C'est certain !
-        </p>
-    </div>
-    <div class="slider-wrapper theme-default ">
-        <!------------------- image slider------------------------ -->
-        <div id="slider" class="nivoSlider" class="container">
-            <img src="images-ferme-flo/acc1.jpg" alt="canard" data-transition="fade" />
-            <img src="images-ferme-flo/acc2.jpg" alt="entrée" data-transition="fade" />
-            <img src="images-ferme-flo/acc3.jpg" alt="annimation" data-transition="fade" />
+        <div class="slider-wrapper theme-default ">
+            <!------------------- image slider------------------------ -->
+            <div id="slider" class="nivoSlider container">
+                <img src="images-ferme-flo/acc1.jpg" alt="canard" data-transition="fade" />
+                <img src="images-ferme-flo/acc2.jpg" alt="entrée" data-transition="fade" />
+                <img src="images-ferme-flo/acc3.jpg" alt="annimation" data-transition="fade" />
+            </div>
         </div>
-    </div>
-</section>
+        <div id="bienvenue">
+            <h1>Bienvenue à la ferme de Flo'.</h1>
+            <p>
+                Au cours de votre visite vous pourrez découvrir les animaux (plus de 200 de 30 espèces !) vivant en
+                harmonie.<br>
+                Vous n’allez pas vous ennuyer ! Nous avons fait en sorte que votre visite vous donne envie de partager
+                notre quotidien.<br>
+                Notre devise : « le bien être le bien vivre et le bien manger dans le respect de tous et de chacun».<br>
+                Ils sont nombreux et vous attendent avec impatience.
+                Il y en a peut-être que vous n'avez jamais approché de si près de votre vie. Nos amies les bêtes sont belles, simples et aimantes. Elles vous adorent.               
+            </p>
+        </div>
+    </section>
     <!-- section accueil visible uniquement si ecran < 768 px -->
     <section id="accueil" class="container">
         <article class="monArticle">
@@ -74,7 +71,7 @@
             <img src="images-ferme-flo/acc1.jpg" alt="mobile">
         </article>
     </section>
- 
+
     <!------------------------- main contenu ------------------------------------>
     <main id="contenuAccueil" class="container">
         <div id="blocA">
@@ -86,14 +83,13 @@
             </iframe>
         </div>
         <div id="blocB">
-            <p>Rendez-vous sur notre page<a href="https://www.facebook.com/lafermedeflo89/videos"><strong>&nbsp;Facebook</strong></a>, pour
-                visualiser d'autre vidéo.</p>
+            <p>Rendez-vous sur <a href="https://www.facebook.com/lafermedeflo89/videos"><strong>&nbsp;Facebook&nbsp;</strong></a>pour plus de vidéo</p>
             <img src="images-ferme-flo/image-video.png" alt="facebook">
         </div>
     </main>
     <!------------------------------- footer -------------------------------------->
     <footer id="pied" class="container">
-        <aside id="bas" >
+        <aside id="bas">
             <div class="colonne">
                 <h3>La ferme de Flo'</h3>
                 <a href="index.html"><img src="images-ferme-flo/logov1.png"></a>
@@ -110,9 +106,11 @@
             <div class="colonne">
                 <h3>Restons en contact</h3>
                 <ul>
-                    <li><a href="https://fr-fr.facebook.com/lafermedeflo89/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://fr-fr.facebook.com/lafermedeflo89/"><i class="fab fa-facebook-square"></i></a>
+                    </li>
                     <li><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="https://www.instagram.com/explore/locations/488668764654303/la-ferme-de-flo/"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/488668764654303/la-ferme-de-flo/"><i
+                                class="fab fa-instagram-square"></i></a></li>
                 </ul>
             </div>
             <div class="colonne">
@@ -122,28 +120,33 @@
                     <p><input type="submit" value="S ' INSCRIRE"></p>
                 </form>
             </div>
-           
+
             <aside id="fleche">
                 <a href="#bandeau"><img src="images-ferme-flo/flechehaut.png"></a>
             </aside>
         </aside>
-        <div id="copyright" class="container">
-            <p>Copyright &copy; 2023 - Amina ALI - Kercode - Greta Bretagne Sud <a href="mention.html">| Mentions légales</a></p>
+        <div id="copyright">
+            <p>Copyright &copy; 2023 - Amina ALI - Kercode - Greta Bretagne Sud <a href="mention.html">| Mentions
+                    légales</a></p>
         </div>
+    
     </footer>
 
     <!---------- script nivo slider-------->
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
     <script src="scripts/jquery.nivo.slider.js"></script>
-    <script>var page = "accueil";</script>
-     <!-- script pour afficher une barre en dessous de l'onglet de la page ou on se situe  -->
+    <script>
+        var page = "accueil";
+    </script>
+    <!-- script pour afficher une barre en dessous de l'onglet de la page ou on se situe  -->
     <script src="scripts/choix.js"></script>
     <script>
         // function pour afficher le slider
         $(window).load(function () {
-           if (($(window).width())>768){
-            $("#slider").nivoSlider();
-        }});
+            if (($(window).width()) > 768) {
+                $("#slider").nivoSlider();
+            }
+        });
         $("#menuprincipal #burger i").click(function () {
             $("#menuprincipal ul").addClass("on").slideToggle(1500);
         });
